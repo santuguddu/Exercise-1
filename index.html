@@ -267,6 +267,11 @@
         font-size: 16px;
       }
 
+      .final-footer {
+        margin-top: 100px;
+        padding-top: 20px;
+      }
+
       /* Bus/Taxi Table - column widths */
       #bus-taxi-table col.c1 {
         width: 14%;
@@ -613,6 +618,16 @@
           I understand that the <a href="#" class="privacy-link">Privacy Notice</a> applies to the personal information collected in this document.
         </label>
       </div>
+
+      <!-- Final Footer -->
+      <footer class="page-footer final-footer">
+        <div class="footer-left">
+          Worker App ID: <span id="worker-app-id-final"></span>
+        </div>
+        <div class="footer-right">
+          Submitted: <span id="submitted-date-final"></span>
+        </div>
+      </footer>
     </div>
 
     <script>
@@ -900,6 +915,8 @@
       function renderFooter() {
         document.getElementById("worker-app-id").textContent = footerData.workerAppId;
         document.getElementById("submitted-date").textContent = footerData.submittedDate;
+        document.getElementById("worker-app-id-final").textContent = footerData.workerAppId;
+        document.getElementById("submitted-date-final").textContent = footerData.submittedDate;
       }
 
       // ===========================
