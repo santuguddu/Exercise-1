@@ -23,8 +23,7 @@ var prescriptionDrugs = [
         datePurchased: "March 6, 2024",
         provider: "Dr. Smith",
         paidAmount: "$25.00"
-    },
-    {
+    }, {
         drugName: "Paracetamol",
         prescriptionDate: "March 10, 2024",
         datePurchased: "March 11, 2024",
